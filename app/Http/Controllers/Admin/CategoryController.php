@@ -24,8 +24,8 @@ class CategoryController extends Controller
     }
     function Index(){
         $topnavs=Arctype::where('reid',0)->pluck('typename','id');
-        $recursivestypeinfo = [];
-        $recursivestypeinfos=Cache::remember('recursivestypeinfos_', 60*24, function() use($topnavs,$recursivestypeinfo)
+        $recursivestypeinfos = [];
+        $recursivestypeinfos=Cache::remember('recursivestypeinfos_', 60*24, function() use($topnavs,$recursivestypeinfos)
         {
             foreach ($topnavs as $key=>$topnav)
             {
@@ -69,12 +69,6 @@ class CategoryController extends Controller
     function PostCreate(StoreCategoryRequest $request){
         //dd($request->all());
         $requestdata=$request->all();
-        if(array_key_exists('image',$requestdata))
-        {
-            $requestdata['litpic']=UploadImages::UploadImage($request,'image');
-        }else{
-            $requestdata['litpic']='';
-        }
         if($requestdata['dirposition']==1)
         {
             $requestdata['real_path']=$requestdata['typedir'];
@@ -102,8 +96,7 @@ class CategoryController extends Controller
         $allnavinfos=Arctype::pluck('typename','id');
         $topid=Arctype::where('id',$id)->value('topid');
         $reid=Arctype::where('id',$id)->value('reid');
-        $pics=array_filter(explode(',',Arctype::where('id',$id)->value('typeimages')));
-        return view('admin.category_edit',compact('typeinfos','thisnavinfos','allnavinfos','topid','id','pics','reid'));
+        return view('admin.category_edit',compact('typeinfos','thisnavinfos','allnavinfos','topid','id','reid'));
     }
     /**
      * 栏目更改数据提交处理界面
@@ -118,10 +111,6 @@ class CategoryController extends Controller
         }
         $requestdata=$request->all();
 
-        if(array_key_exists('image',$requestdata))
-        {
-            $requestdata['litpic']=UploadImages::UploadImage($request,'image');
-        }
         if($requestdata['dirposition']==1)
         {
             $requestdata['real_path']=$requestdata['typedir'];

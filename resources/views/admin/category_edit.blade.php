@@ -11,8 +11,6 @@
             <div class="nav-tabs-custom">
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#settings" data-toggle="tab">常规选项</a></li>
-                    <li><a href="#timeline" data-toggle="tab">高级选项</a></li>
-                    <li><a href="#activity" data-toggle="tab">栏目内容</a></li>
                 </ul>
                 {{Form::model($typeinfos,array('route' => array('category_edit','id'=>$id),'method' => 'put','files' => true,'class'=>"form-horizontal"))}}
                 <div class="tab-content">
@@ -73,15 +71,9 @@
                                 @if($typeinfos->mid==1)
                                     {{Form::radio('mid', '1', true,array('class'=>"flat-red",'checked'=>'checked'))}} 品牌类型
                                     {{Form::radio('mid', '0',false,array('class'=>"flat-red"))}} 普通文章
-                                    {{Form::radio('mid', '2',false,array('class'=>"flat-red"))}} 封面频道
-                                @elseif($typeinfos->mid==0)
-                                    {{Form::radio('mid', '1', true,array('class'=>"flat-red"))}} 品牌类型
-                                    {{Form::radio('mid', '0',false,array('class'=>"flat-red",'checked'=>'checked'))}} 普通文章
-                                    {{Form::radio('mid', '2',false,array('class'=>"flat-red"))}} 封面频道
                                 @else
                                     {{Form::radio('mid', '1', true,array('class'=>"flat-red"))}} 品牌类型
-                                    {{Form::radio('mid', '0',false,array('class'=>"flat-red"))}} 普通文章
-                                    {{Form::radio('mid', '2',false,array('class'=>"flat-red",'checked'=>'checked'))}} 封面频道
+                                    {{Form::radio('mid', '0',false,array('class'=>"flat-red",'checked'=>'checked'))}} 普通文章
                                 @endif
                             </div>
                         </div>
@@ -112,140 +104,15 @@
                                 @endif
                             </div>
                         </div>
-
-                        <div class="form-group">
-                            {{Form::label('ktitle', '知识分类标题', array('class' => 'col-sm-2 control-label'))}}
-                            <div class="col-sm-5">
-                                {{Form::text('ktitle', null, array('class' => 'form-control','id'=>'ktitle','placeholder'=>'知识分类标题'))}}
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            {{Form::label('kkeywords', '知识分类关键字', array('class' => 'col-sm-2 control-label'))}}
-                            <div class="col-sm-5">
-                                {{Form::text('kkeywords', null, array('class' => 'form-control','id'=>'kkeywords','placeholder'=>'知识分类关键字'))}}
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            {{Form::label('kdescription', '知识分类描述', array('class' => 'col-sm-2 control-label'))}}
-                            <div class="col-sm-5">
-                                {{Form::textarea('kdescription',null, array('class' => 'form-control','id'=>'kdescription','placeholder'=>'知识分类描述','cols'=>'','rows'=>''))}}
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            {{Form::label('ntitle', '新闻分类标题', array('class' => 'col-sm-2 control-label'))}}
-                            <div class="col-sm-5">
-                                {{Form::text('ntitle', null, array('class' => 'form-control','id'=>'ntitle','placeholder'=>'新闻分类标题'))}}
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            {{Form::label('nkeywords', '新闻分类关键字', array('class' => 'col-sm-2 control-label'))}}
-                            <div class="col-sm-5">
-                                {{Form::text('nkeywords', null, array('class' => 'form-control','id'=>'nkeywords','placeholder'=>'新闻分类关键字'))}}
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            {{Form::label('ndescription', '新闻分类描述', array('class' => 'col-sm-2 control-label'))}}
-                            <div class="col-sm-5">
-                                {{Form::textarea('ndescription', null, array('class' => 'form-control','id'=>'ndescription','placeholder'=>'新闻分类描述','cols'=>'','rows'=>''))}}
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            {{Form::label('ptitle', '排行分类标题', array('class' => 'col-sm-2 control-label'))}}
-                            <div class="col-sm-5">
-                                {{Form::text('ptitle', null, array('class' => 'form-control','id'=>'ntitle','placeholder'=>'排行分类标题'))}}
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            {{Form::label('pkeywords', '新闻分类关键字', array('class' => 'col-sm-2 control-label'))}}
-                            <div class="col-sm-5">
-                                {{Form::text('pkeywords',null, array('class' => 'form-control','id'=>'pkeywords','placeholder'=>'排行分类关键字'))}}
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            {{Form::label('pdescription', '新闻分类描述', array('class' => 'col-sm-2 control-label'))}}
-                            <div class="col-sm-5">
-                                {{Form::textarea('pdescription', null, array('class' => 'form-control','id'=>'pdescription','placeholder'=>'排行分类描述','cols'=>'','rows'=>''))}}
-
-                            </div>
-                        </div>
-
                     </div>
+
                     <!-- /.tab-pane -->
-                    <div class="tab-pane" id="timeline">
-                        <!-- The timeline -->
-
-                        <ul class="timeline timeline-inverse">
-                            <!-- timeline time label -->
-                            <li class="time-label">
-                        <span class="bg-red">
-                          10 Feb. 2014
-                        </span>
-                            </li>
-                            <!-- /.timeline-label -->
-                            <!-- timeline item -->
-                            <li>
-                                <i class="fa fa-camera  bg-blue"></i>
-                                <div class="timeline-item">
-                                    <span class="time"><i class="fa fa-clock-o"></i> 5 mins ago</span>
-                                    <h3 class="timeline-header no-border"><a href="#">缩略图处理</a> 图片上传</h3>
-                                    <div class="timeline-body">
-                                        <div class="col-md-4 col-sm-12 col-xs-12">
-                                            <img src="{{ $typeinfos->litpic }}" class="img-rounded img-responsive"/>
-                                        </div>
-                                        <div class="col-md-8 col-sm-12 col-xs-12">
-                                            {{Form::file('image', array('class' => 'file col-md-10','id'=>'input-2','multiple data-show-upload'=>"false",'data-show-caption'=>"true"))}}
-                                        </div>
-                                        <div style="clear: both"></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa fa-camera bg-purple"></i>
-                                <div class="timeline-item">
-                                    <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
-                                    <h3 class="timeline-header"><a href="#">图集处理</a> 批量上传图集</h3>
-                                    <div class="timeline-body">
-                                        {{Form::file('image', array('name'=>'input-image','class' => 'file-loading','id'=>'input-image-1','accept'=>'image/*'))}}
-                                        <div id="kv-success-modal" class="modal fade">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        <h4 class="modal-title">Yippee!</h4>
-                                                    </div>
-                                                    <div id="kv-success-box" class="modal-body">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        {{Form::hidden('typeimages', null,array('id'=>'typeimages'))}}
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- timeline time label -->
-                            <li class="time-label">
-                        <span class="bg-green">
-                          3 Jan. 2014
-                        </span>
-                            </li>
-                            <li>
-                                <i class="fa fa-clock-o bg-gray"></i>
-                            </li>
-                        </ul>
                     </div>
-                    <!-- /.tab-pane -->
-                    <div class=" tab-pane" id="activity">
-                    @include('admin.layouts.ueditor')
-                    <!-- 编辑器容器 -->
-                        <script id="container" name="contents" type="text/plain" > {!! $typeinfos->contents!!}</script>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            {{Form:: button('提交',array('class'=>'btn btn-danger','type'=>'submit'))}}
+                        </div>
                     </div>
-                    <!-- /.tab-pane -->
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                        {{Form:: button('提交',array('class'=>'btn btn-danger','type'=>'submit'))}}
-                    </div>
-                </div>
             {!! Form::close() !!}
             <!-- /.tab-content -->
 
@@ -287,50 +154,6 @@
                 radioClass: 'iradio_flat-green'
             });
 
-        });
-    </script>
-    <script>
-        $("#input-image-1").fileinput({
-            uploadUrl: "/admin/upload/images",
-            uploadAsync: true,
-            minFileCount: 1,
-            language: 'zh',
-            maxFileCount: 6,
-            overwriteInitial: false,
-            initialPreview: [
-                // IMAGE DATA
-                @foreach($pics as $pic)
-                    "{{$pic}}",
-                // IMAGE DATA
-                @endforeach
-            ],
-            initialPreviewAsData: true, // identify if you are sending preview data only and not the raw markup
-            initialPreviewFileType: 'image', // image is the default and can be overridden in config below
-            initialPreviewConfig: [
-                    @foreach($pics as $indexnum=>$pic)
-                {caption: "{{$indexnum+1}}", size: 827000, width: "120px", url: "/admin/file-delete-batch", key: [ {{$indexnum+1}} ,'{{$pic}}',{{$typeinfos->id}}]},
-                @endforeach
-
-            ],
-            purifyHtml: true, // this by default purifies HTML data for preview
-            uploadExtraData: {
-                img_key: "1000",
-                img_keywords: "happy, places",
-            }
-        }).on('filesorted', function(e, params) {
-            alert(222);
-            console.log('File sorted params', params);
-        }).on('fileuploaded', function(event, data) {
-            $('#kv-success-box').append(data.response.link);
-            $('#kv-success-modal').modal('show');
-            $("#typeimages").val($("#typeimages").val()+data.response.link+',');
-        }).on('filepreremoved', function(e, params) {
-            console.log('File sorted params', params);
-            alert(111);
-        }).on('filedeleted', function(event, key) {
-            console.log('Key = ' + key);
-            arrs=key.split(',')
-            $("#typeimages").val($("#typeimages").val().replace(arrs[1]+',',''));
         });
     </script>
 @stop

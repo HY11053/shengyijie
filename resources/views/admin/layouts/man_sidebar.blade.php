@@ -47,20 +47,6 @@
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa  fa-database"></i> <span>知识内容管理</span>
-                    <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                </a>
-                <ul class="treeview-menu">
-                    <li @if(Request::getRequestUri()=='/admin/article/knowledges')class="active"@endif><a href="/admin/article/knowledges" ><i class="fa fa-circle-o"></i> 知识文档列表</a></li>
-                    <li @if(Request::getRequestUri()=='/admin/article/knowledges/ownership')class="active" @endif><a href="/admin/article/knowledges/ownership"><i class="fa fa-circle-o"></i> 我发布的知识</a></li>
-                    <li @if(Request::getRequestUri()=='/admin/article/knowledges/pendingaudit')class="active" @endif><a href="/admin/article/knowledges/pendingaudit"><i class="fa fa-circle-o"></i> 等待审核知识</a></li>
-                    <li @if(Request::getRequestUri()=='/admin/article/knowledges/pedingpublished')class="active" @endif><a href="/admin/article/knowledges/pedingpublished"><i class="fa fa-circle-o"></i> 待发布的知识</a></li>
-                </ul>
-            </li>
-            <li class="treeview">
-                <a href="#">
                     <i class="fa  fa-commenting"></i>
                     <span>问答评论管理</span>
                     <span class="pull-right-container">
@@ -177,39 +163,6 @@
                 <ul class="treeview-menu">
                     <li @if(Request::getRequestUri()=='/admin/userlist')class="active"@endif><a href="/admin/userlist"><i class="fa fa-circle-o"></i> 前台用户管理</a></li>
                     <li @if(Request::getRequestUri()=='/admin/useradd')class="active"@endif><a href="/admin/useradd"><i class="fa fa-circle-o"></i> 添加前台用户</a></li>
-                </ul>
-            </li>
-            <li class="treeview">
-                <a href="#">
-                    <i class="fa fa-share"></i> <span>功能待开发中</span>
-                    <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-                    <li>
-                        <a href="#"><i class="fa fa-circle-o"></i> Level One
-                            <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
-                            <li>
-                                <a href="#"><i class="fa fa-circle-o"></i> Level Two
-                                    <span class="pull-right-container">
-                      <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                                </a>
-                                <ul class="treeview-menu">
-                                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
                 </ul>
             </li>
             <li><a href="https://github.com/HY11053/laravelcms"><i class="fa fa-book"></i> <span>后台使用文档</span></a></li>
