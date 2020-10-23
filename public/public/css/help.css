@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0;  padding:0;}
+html,body,div,p,ul,ol,li,h1,h2,h3,h4,h5,h6,span,code,em,strong,dl,dt,dd,img{ border:0;}
+body{font-size:12px;color:#666;font-family:"宋体";text-align:center;background-color:#fff;}
+html,body{ height:100%;}
+select{ border:1px solid #ccc;}
+li{ list-style:none;}
+.left{ float:left;}
+.right{ float:right;}
+/* ----- clear fix for floats ----- */
+/* these styles instruct non-IE browsers to render container elements so that they fully enclose floats */
+/* without this class applied, a float might hang over the bottom border of it's container */
+.clearfix:after {content:"."; width:0; height:0; line-height:0; font-size:0; display:block; clear:both; visibility:hidden; overflow:hidden;margin:0;}
+.clearfix {display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height:1%;}
+.clearfix {display:block;}
+/* End hide from IE-mac */
+.clear{ clear:both; height:0; font-size:0; line-height:0; overflow:hidden;}
+.clearboth{ clear:both;}
+a{ color:#333; text-decoration:none; blr:expression(this.onFocus=this.blur()); outline: none; }
+area { blr:expression(this.onFocus=this.blur());}
+a:hover{ color:#bd0000;}
+.box{ width:990px; margin:0 auto; text-align:left;}
+
+
+
+.header{ padding:14px 0; height:52px;}
+.logo{ float:left;}
+.header span,.header strong{ font-weight:bold; margin-top:6px;}
+.header span a,.header strong a{  float:right; width:156px; height:43px; line-height:40px;  display:block;  margin-left:20px; color:#fff; font-size:16px; font-family:"微软雅黑"; text-indent:50PX; display:block;}
+.header span a{background:url(../images/about/chuangye.jpg) no-repeat;}
+.header strong a{background:url(../images/about/chuangye.jpg) no-repeat -156px 0;}
+.menu{ height:38px; background: url(../images/about/menu_bg.jpg) repeat-x #e63933; position:relative; z-index:999;}
+
+.menu li.current span a{ color:#feeb01;}
+.current .menu_xs{ display:block;}
+.all_menu_li{ float:left; background:url(../images/about/menu_fg.jpg) no-repeat right center; padding-right:2px; position:relative; height:38px;}
+.menu ul li.qline{ background:none; padding-right:0;}
+.menu ul li.menu_0 span a{ width:80px; }
+.all_menu_li span a{ display:block; float:left; font-size:14px; color:#fff; width:116px; text-align:center; height:38px; line-height:38px; font-weight:bold;}
+.menu_xs{ display:none; position:absolute; left:-1px; top:38px; border-right:1px solid #e63933; border-bottom:1px solid #e63933; border-left:1px solid #e63933; background-color:#fff; width:108px; padding:4px; }
+.menu_xs li{ height:26px; line-height:26px; font-family:"微软雅黑"; text-align:center; border-bottom:2px solid #fff;}
+.menu_xs li a{ display:block;background-color:#f8f8f8;}
+.menu_xs li a:hover{ background-color:#e63933; color:#fff;}
+.menu li.dq span a{ background-color:#fff;  color:#e63933; height:35px; line-height:35px; margin-top:3px;}
+
+.flash_bn{ width:990px; height:210px; margin:10px auto 0 auto; text-align:left;}
+
+.w194{ width:194px; float:left;}
+
+.lbg,.lianxi{background:url(../images/about/nav.jpg) repeat-y; margin-top:10px;}
+.lbg1{ background:url(../images/about/nav.jpg) no-repeat -194px top;}
+.lbg2{ background:url(../images/about/nav.jpg) no-repeat -388px bottom;}
+
+.nav h2{ padding:6px 0 0 44px; height:36px; line-height:36px; font-size:16px; font-family:"微软雅黑"; color:#fff;}
+.nav ul{ padding:10px 0 14px 16px;}
+.nav ul li{ height:33px; line-height:28px; background:url(../images/about/nav_a.jpg) no-repeat left bottom; padding-left:24px; font-size:14px;}
+.nav ul li a{ color:#333;}
+.nav ul li.dq a{ color:#e63933; font-weight:bold;}
+
+.lianxi1{ background:url(../images/about/lianxi.jpg) no-repeat; }
+.lianxi2{ background:url(../images/about/lianxi.jpg) no-repeat -194px bottom; padding:52px 13px 104px 13px;}
+.lianxi h2{ height:0; line-height:0; overflow:hidden; text-indent:-9999px;}
+
+.lianxi ul li{ line-height:24px; padding:2px 0 2px 26px; font-size:14px; color:#333;}
+.l_c1{ background:url(../images/about/lianxi_pic.jpg) no-repeat;}
+.l_c2{ background:url(../images/about/lianxi_pic.jpg) no-repeat 0 -48px;}
+.l_c3{ background:url(../images/about/lianxi_pic.jpg) no-repeat 0 -75px;}
+.l_c4{ background:url(../images/about/lianxi_pic.jpg) no-repeat 0 -100px;}
+
+.w700{ width:770px;float:right;}
+
+.bt{ border-bottom:1px solid #e2e2e2; margin-top:16px; line-height:36px; height:36px;}
+.bt h1,.bt strong{ float:left; font-size:18px; font-family:"微软雅黑"; color:#333; background:url(../images/bt_pic.jpg) no-repeat left center; padding-left:14px;}
+.bt .weizhi_locations{ float:right; color:#666;}
+.bt .weizhi_locations a{ color:#666;}
+
+.content{ padding:10px 0; line-height:180%; font-size:14px;}
+
+.footer{ width:990px; margin:14px auto 0 auto; text-align:center; line-height:26px; padding:10px 0; border-top:3px solid #e63933; }
+.footer a{ color:#666;}
+
+
+
+
+.news_list{ padding:0 10px;}
+.news_list ul li{ height:90px; padding:18px 0; border-bottom:1px dashed #ccc;}
+.news_list ul li.jg{ background-color:#f2f2f2;}
+.news_list ul li strong{ display:block; font-size:16px; font-family:"微软雅黑"; height:22px; line-height:22px; padding-bottom:2px; overflow:hidden;}
+.news_list ul li strong a{ color:#333;}
+.news_list ul li h3 a:hover{ color:#f27c1a;}
+.news_list ul li p{ line-height:24px; height:48px; overflow:hidden;}
+.news_list ul li span{ display:block; padding-top:2px; color:#999; line-height:20px;}
+.news_list ul li span em{ float:left; font-style:normal; color:#999; padding-right:14px;}
+.news_list ul li span b{ background:url(../images/biaoqian.gif) no-repeat left center; padding-left:14px; float:left; font-weight:100;}
+.news_list ul li span b a{ color:#ff8331; margin-right:14px;}
+.news_list ul li img{ width:120px; height:90px; float:left; margin-right:12px; }
+
+.page {padding:30px 0; text-align: center;}
+.page a { padding:8px 12px; background: #f5f5f5; border:1px solid #e2e2e2; margin-right: 6px; color: #333; display: inline-block; font-family:"微软雅黑";}
+.page a:hover { background:#e2e2e2; }
+.page span { padding:8px 12px; background:#d81f13;border:1px solid #d81f13; margin-right: 6px; color: #fff; display: inline-block;font-family:"微软雅黑";  }
+.fabuxm{ padding-bottom:24px; text-align:center;}
+.fabuxm a{ color:#115599;}
+
+
+
+.content_bt{ padding:20px 0 14px; border-bottom:1px dashed #e2e2e2; margin:0 20px;}
+.content_ly{ padding-top:14px; color:#999; text-align:center;}
+.content_bt h1{ text-align:center; font-size:24px; font-family:"微软雅黑"; color:#333;}
+.fenxiangdaima{ float:right;}
+.content2{ padding:10px 20px 20px 20px; font-size:14px; line-height:200%; color:#333;}
+.content_bj{ text-align:right; color:#999; margin-top:14px;}
+
+.nr_biaoqian{ background-color:#e2e2e2; padding:0 14px; line-height:32px; margin-top:14px; font-size:12px; height:32px;}
+.nr_biaoqian strong{ float:left; background:url(../images/biaoqian.gif) no-repeat left center; padding-left:14px;}
+.nr_biaoqian a{ margin-right:14px; color:#333;}
+.shangxiapian{ line-height:30px; padding-top:10px;}
+
+
+
+
+
+.zs_bka{border:1px solid #ffdccc; background-color:#fdf7e8; margin-top:10px;overflow:hidden; padding:0 26px;}
+.zs_pica{ margin:20px 0 0 103px;width:480px;padding:10px; border:1px solid #ffdccc; background-color:#fff; position:relative;}
+.zc_pica{ height:360px; }
+.zs_pica1{width:480px; text-align:center; position:relative; display:table-cell;vertical-align:middle; position:relative;}
+.zs_pica1{ height:360px;}
+.zs_pica1 .zs_pica1{*position:absolute;top:50%;left:50%;}
+.zs_pica1 .zs_pica1{*position:relative;top:-50%;left:-50%;}
+.zs_pica h1{ position:absolute; left:0; bottom:0; width:480px; height:30px; background:url(../images/p60.png) no-repeat; font-size:14px; text-align:center; color:#fff; line-height:30px;}
+
+.zs_pica .zs_pic_sx{position:absolute;z-index:3;width:100%;top:147px; display:none;}
+.zs_pic_s,.zs_pic_x{display:block;width:36px;height:66px;overflow:hidden;cursor:pointer;position:absolute; text-indent:-9999px;}
+.zs_pic_s{left:0;background:url(../images/prev.png) 0 0 no-repeat;}
+.zs_pic_x{right:0;background:url(../images/next.png) 0 0 no-repeat;}
+
+
+
+.chanpin_gd{ padding-left:56px; position:relative; height:150px; border-top:1px dashed #ffdccc; padding-top:14px;}
+.chanpin_tp{ padding-left:56px; position:relative; height:125px; border-top:1px dashed #ffdccc; padding-top:14px;}
+
+#goL,#goR{  width:30px; height:30px; display:block; text-indent:-9999px; overflow:hidden; text-indent:-9999px; position:absolute;  top:58px;}
+.chanpin_tp #goL,.chanpin_tp #goR{ top:46px;}
+#goL{background:url(../images/chanpin_page.gif) no-repeat;left:14px;}
+#goR{background:url(../images/chanpin_page.gif) no-repeat 0 -60px;right:14px;}
+#goL:hover{background:url(../images/chanpin_page.gif) no-repeat 0 -30px;}
+#goR:hover{background:url(../images/chanpin_page.gif) no-repeat 0 -90px;}
+
+.chanpin_gd #marquee4,.chanpin_tp #marquee4{ width:606px; overflow:hidden; position:relative;}
+.chanpin_gd #marquee4 ul li,.chanpin_tp #marquee4 ul li{ float:left;  width:110px; padding-right:14px; }
+.chanpin_gd #marquee4 ul li span{ width:100px; height:100px; padding:4px; border:1px solid #ffdccc; background-color:#fff; display:block; overflow:hidden;display:block;vertical-align:middle; position:relative; text-align:center;}
+.chanpin_tp #marquee4 ul li span{ width:100px; height:75px; padding:4px; border:1px solid #ffdccc; background-color:#fff; display:block; overflow:hidden;display:block;vertical-align:middle; position:relative; text-align:center;}
+.chanpin_tp #marquee4 ul li span img{ width:100px; height:75px;}
+.chanpin_gd #marquee4 ul li span div{*position:absolute;top:50%;left:50%;}
+.chanpin_gd #marquee4 ul li span div img{*position:relative;top:-50%;left:-50%;}
+.chanpin_gd #marquee4 ul li em,.chanpin_tp #marquee4 ul li em{ font-style:normal; height:20px; line-height:20px; background-color:#ffdccc; text-align:center; display:block; overflow:hidden;}
+
+
+
+
+.pp_chanpin_list{ border:1px solid #ffdccc; background-color:#fdf7e8; margin-top:10px; overflow:hidden;}
+
+.pp_chanpin_list ul{  padding:14px 0 0 26px;}
+.pp_chanpin_list ul li{ width:222px; float:left; margin:0 22px 20px 0;}
+.pp_chanpin_list ul li span{ display:block; width:200px; height:150px; padding:10px; background-color:#fff;border:1px solid #ffdccc; }
+.pp_chanpin_list ul li span img{ width:200px; height:150px;}
+.pp_chanpin_list ul li em{ display:block; height:30px; line-height:30px; background-color:#ffdccc; font-style:normal; text-align:center;}

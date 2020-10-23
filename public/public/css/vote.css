@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*面包屑*/
+ .dingcai{ padding:14px 0 12px 256px;  }
+.dingcai a{ float:left; margin-right:46px; font-size:12px; color:#666;}
+.dingcai strong{ display:none;}
+.news_ding{ width:76px; padding-top:40px; height:25px; line-height:22px; text-align:center; display:block; background:url(../images/dingcai.jpg) no-repeat 0 -69px; }
+.news_ding:hover{background:url(../images/dingcai.jpg) no-repeat 0 0;}
+.news_cai{ width:74px; padding-top:40px; height:23px; line-height:22px; text-align:center; display:block; background:url(../images/dingcai.jpg) no-repeat -121px -69px; }
+.news_cai:hover{background:url(../images/dingcai.jpg) no-repeat -121px 0;}
+
+
+.tancbg {
+display:none;
+background-color:#000;
+width: 100%;
+height: 100%;
+left:0;
+top:0;/*FF IE7*/
+filter:alpha(opacity=30);/*IE*/
+opacity:0.3;/*FF*/
+z-index:9998;
+position:fixed!important;/*FF IE7*/
+position:absolute;/*IE6*/
+_top:       expression(eval(document.compatMode &&
+            document.compatMode=='CSS1Compat') ?
+            documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+            document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);/*IE5 IE5.5*/
+
+}
+
+.tanc{ display:none; z-index:10000;width:530px;height:460px;background:#FFF; font-size:12px;border: 1px solid #d8d8d8;
+position:absolute;
+left:50%;/*FF IE7*/
+top: 50%;/*FF IE7*/
+margin-left:-276px!important;
+margin-top:-231px!important;
+margin-top:0px;
+position:fixed!important;/*FF IE7*/
+position:absolute;/*IE6*/
+_top:       expression(eval(document.compatMode &&
+            document.compatMode=='CSS1Compat') ?
+            documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+            document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);/*IE5 IE5.5*/
+
+
+}
+.pinta .pinta-1{}
+.pinta-1 .bth2{ margin:0 14px; border-bottom:1px dashed #e2e2e2; height:60px; line-height:60px; color:#f74844; font-family:"微软雅黑"; font-size:20px;font-weight: bold;background: url(http://www.5988.com/public/images/tjbg.jpg) no-repeat 90px center; text-indent:160px;}
+
+.tanc .pinta-1 .bth2 a{float:right;line-height:40px;font-weight: normal; text-indent:0;}
+
+
+.pinta-2{ padding:20px 0 25px 10px; position:relative;}
+.pinta-1 ul li{ height:50px;list-style-type: none; }
+.pinta-1 ul li strong{ width:88px; float:left; text-align:right; padding-right:16px; line-height:38px; font-weight:100; color:#333;}
+.pinta-1 ul li strong code{ color:#f74844; padding-right:8px;}
+.pinta-text2{ border:1px solid #ccc; padding:5px;  width:350px; height:26px; line-height:26px;  float:left;margin-right:12px;}
+.pinta-textarea{ border:1px solid #ccc; padding:5px;  width:350px; height:90px;  float:left;margin-right:12px; font-size:12px;font-family:"微软雅黑"; margin-top:5px;}
+.pinta-radio{ width:14px; height:14px; overflow:hidden; float:left; margin:6px 8px 0 0;}
+.pinta-1 ul li em{ font-style:normal; float:left; padding-right:20px; color:#333; line-height:28px;}
+.pinta-submit{background:#f74844;border:none;width:128px;height:36px;display:block;text-align:center;float:left;color:#fff;line-height:36px;font-size:14px;font-weight:bold;border:none;cursor:pointer;}
+.pinta-3{line-height: 2em;padding-left:35px;}
+.pinta-3 li strong{color:#f74844;font-weight: normal;font-size: 14px;}

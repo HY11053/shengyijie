@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+.about_r { padding: 20px 25px; float: left; background: #fff; margin-bottom: 20px; }
+.about_r .hds { background: none; text-align: center; font-weight: bold; border-bottom: 2px solid #F5F5F5; height: 40px; font-size: 20px; }
+.about_r .bd { font-size: 14px;line-height: 24px;padding: 20px 0 0 0;}
+.about_r .bd .bd_txt{font-size: 20px;color: #D81418;background: url(../images/dot1.jpg) no-repeat 0px 3px;text-align: left;padding: 0px 0 0px 14px;overflow: hidden;list-style-type: none;}
+.about_r .bd .bd_info{ padding:15px 0; overflow: hidden; margin-bottom:10px;}
+.about_r .bd .bd_info .Lawpic {float: left;margin-top: 6px;text-align: center;margin-right: 50px;}
+.about_r .bd .bd_info .Lawpic img { border: 1px solid #cccccc; padding: 5px; height: 148px; width: 115px;}
+.about_r .bd .bd_info .Lawcon {width: 580px;float: left;margin-top: 20px;}
+.about_r .bd .bd_info .Lawcon li {line-height: 200%;list-style-type: none;font-size: 12px;text-align: left;}
+.about_r .bd .bd_info .Lawcon .BT { font-weight: bold;width: 72px;float: left;}
+.about_r .bd .bd_info .Lawcon  .NR {width: 204px;float: left;}
+
+
+.banner {width: 1000px;height:200px;overflow: hidden;  margin:20px auto;}
+
+.box1{  width:1000px;}
+.delete_main{border: solid 1px #dedede; margin-top: 20px; margin-bottom:20px; background-color:#fff;}
+.NeedKnow{border-bottom:solid 1px #dedede;}
+.NeedKnow .title{padding:40px 20px 0;width:80px;line-height:30px;font-size:20px;font-family:"微软雅黑";font-weight:700px;text-align:center;float:left;}
+.NeedKnow .title img{margin-bottom:10px;}
+.NeedKnow .content,.problem .content{padding:30px 20px; border-left:solid 1px #dedede;float:left;width:837px;}
+.NeedKnow .content li,.problem li,.problem .content li ul li{position:relative;padding-left:20px;width:817px;line-height:24px;font-size:14px;margin-bottom:15px;}
+.NeedKnow .content li span,.problem .content li ul li span{width:16px;height:16px;display:block;color:#ffffff;line-height:16px;background:url(../images/3.png);position:absolute;left:0;top:4px;text-align:center;}
+.NeedKnow .content li.suBbtn{width:289px;height:36px;line-height:36px;font-size:18px;font-family:"微软雅黑";background:url(../images/3-04.png) no-repeat;padding:0;text-align:center;}
+.NeedKnow .content li.suBbtn a{color:#e71f19;}
+.problem .title{padding:40px 20px 0;width:80px;line-height:30px;font-size:20px;font-family:"微软雅黑";font-weight:700px;text-align:center;float:left;}
+.problem .title img{margin-bottom:10px;}
+.problem li{padding-left:0;}
+.problem .content li h2{font-weight:bold;font-size:14px;margin-bottom:10px;}
+.problem .content li p{font-size:14px;}
+.problem .content li ul li{margin-bottom:5px;}
+.NeedKnow .content li.suBbtn{width:289px;height:36px;line-height:36px;font-size:18px;font-family:"微软雅黑";background:url(../images/3-04.png) no-repeat;padding:0;text-align:center;}
+.NeedKnow .content li.suBbtn a{color:#e71f19;}

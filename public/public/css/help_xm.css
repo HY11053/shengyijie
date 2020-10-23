@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0;  padding:0;}
+html,body,div,p,ul,ol,li,h1,h2,h3,h4,h5,h6,span,code,em,strong,dl,dt,dd,img{ border:0;}
+body{font-size:12px;color:#666;font-family:"宋体";text-align:center;background-color:#fff;}
+html,body{ height:100%;}
+select{ border:1px solid #ccc;}
+li{ list-style:none;}
+.left{ float:left;}
+.right{ float:right;} 
+/* ----- clear fix for floats ----- */
+/* these styles instruct non-IE browsers to render container elements so that they fully enclose floats */		
+/* without this class applied, a float might hang over the bottom border of it's container */
+.clearfix:after {content:"."; width:0; height:0; line-height:0; font-size:0; display:block; clear:both; visibility:hidden; overflow:hidden;margin:0;}
+.clearfix {display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height:1%;}
+.clearfix {display:block;}
+/* End hide from IE-mac */
+.clear{ clear:both; height:0; font-size:0; line-height:0; overflow:hidden;}
+.clearboth{ clear:both;}
+a{ color:#333; text-decoration:none; blr:expression(this.onFocus=this.blur()); outline: none; }
+area { blr:expression(this.onFocus=this.blur());}
+a:hover{ color:#bd0000;}
+.box{ width:990px; margin:0 auto; text-align:left;}
+
+.help_xm{ background:url(../images/help_xm/help_xm.jpg) no-repeat center top; height:352px; text-indent:-9999px;}
+
+.help_xm_01{ background-color:#fff4d5; height:324px;}
+.help_xm_01 h2{ font-size:30px; font-family:"微软雅黑"; color:#333; padding-top:12px; line-height:76px;}
+.help_xm_01 .box{ height:324px; position:relative;}
+.help_xm_pic_01{ background:url(../images/help_xm/help_xm_01.png) no-repeat; width:285px; height:292px; position:absolute; right:0; bottom:0;}
+.help_xm_01 ul{ background-color:#fff; padding:26px 0 26px 40px; height:120px; line-height:40px;}
+.help_xm_01 ul li{ font-size:18px; font-family:"微软雅黑"; color:#333; height:40px; line-height:40px;}
+.help_xm_01 ul li em{ float:left; color:#fff; background-color:#d81f13; width:24px; height:24px; display:block; text-align:center; line-height:24px; margin:8px 12px 0 0; font-style:normal; -moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;  }
+
+.help_xm_02{ padding-bottom:20px;}
+.help_xm_02 h2{ font-size:30px; font-family:"微软雅黑"; color:#333; padding-top:24px; line-height:46px;}
+.help_xm_02_js{ line-height:32px; color:#d90a02; font-size:18px; font-family:"微软雅黑";}
+
+.help_fs1{ height:186px; background:url(../images/help_xm/fangshi01.png) no-repeat right bottom; border-bottom:10px solid #ffc003}
+.help_fs1 h3{ padding-top:48px; height:33px; line-height:33px; font-size:18px; font-family:"微软雅黑"; color:#333;font-weight:100;}
+.help_fs1 h3 strong,.help_fs2 h3 strong{ font-weight:100; background:url(../images/help_xm/fangshi_pic.jpg) no-repeat; width:89px; height:33px; color:#fff; text-indent:10px; display:block; float:left; margin-right:10px;}
+.help_fs1 span{ background:url(../images/help_xm/dianhua.jpg) no-repeat; width:451px; height:47px; text-indent:-9999px; display:block; margin-top:24px;}
+.help_fs2 h3{ padding-top:18px; height:33px; line-height:33px; font-size:18px; font-family:"微软雅黑"; color:#333;font-weight:100;}
+
+
+.bk{ background-color:#fff4d5; padding:6px 14px;}
+.help_f_1{margin-top:12px; color:#333; font-family:"微软雅黑";}
+.help_bt{ line-height:32px; font-size:16px; }
+.help_bt span{ color:#d90a02;}
+.help_f_1 ul{ padding-left:24px; font-size:14px;}
+.help_f_1 ul li{ height:28px; line-height:28px; float:left; margin-right:2em;}
+.h_radio,.h_checkbox{ float:left; margin:5px 8px 0 0;  width:14px; height:14px; overflow:hidden;}
+.help_cs{ padding-left:2em;}
+.h_select{ float:left; height:28px; margin-right:14px;}
+.textarea{ padding-left:24px;}
+.textarea textarea{ width:602px; height:110px; border:1px solid #e2e2e2;}
+.h_text1{ width:100px; height:26px; border:1px solid #e2e2e2; float:left; margin-right:2em;}
+.h_text2{ width:200px; height:26px; border:1px solid #e2e2e2; float:left; margin-right:2em;}
+.button{ padding:20px 0; text-align:center;}
+.button input{ background:url(../images/saerch_button.jpg) repeat-x; width:168px; height:38px; font-size:16px; font-weight:bold; line-height:38px; border:none; cursor:pointer; color:#fff; font-family:"微软雅黑";-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+
+.help_xm_03{ background-color:#fff4d5; padding-bottom:40px;}
+.help_xm_03 h2{ font-size:30px; font-family:"微软雅黑"; color:#333; padding-top:12px; line-height:76px;}
+.help_xm_03 p{ padding:32px 200px 0 24px; font-size:18px; font-family:"微软雅黑"; color:#333; background:url(../images/help_xm/help_03.jpg) no-repeat right center #fff; height:152px;; line-height:40px;}
+
+.footer{ height:50px; line-height:50px; text-align:center; color:#fff; background-color:#d81f13;}

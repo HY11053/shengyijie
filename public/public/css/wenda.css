@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*面包屑*/
+.weizhi_locations{ margin-top:4px;   }
+.weizhi_locations span{ display:block;background:url(../images/crumbs_pic.gif) no-repeat 14px center #f2f2f2;padding-left:28px; border-left:1px solid #fff; border-right:1px solid #fff; background-color:#f2f2f2;  height:32px; line-height:32px;}
+.weizhi_locations a{ margin:0 8px;}
+.weizhi_locations a.dq,.weizhi_locations1 a.dq{ color:#f27c1a;}
+.bk{ border-top:2px solid #d81f13; border-right:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2; border-left:1px solid #e2e2e2; }
+
+

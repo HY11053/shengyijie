@@ -1,0 +1,62 @@
+/* CSS Document */
+.all_sort{ width:200px; position:absolute; left:0; top:0;}
+.all_sort h2{ background: url(../images/menu_zd.gif) no-repeat 160px 14px #e94338; height:40px; line-height:40px; padding-left:14px; color:#fff; font-size:14px;}
+
+.all_sort_all{ background-color:#e94338; height:424px; position:relative; width:200px;}
+.shangji{ position:relative;}
+.shangji_y{ position:absolute; left:198px; top:0; border:2px solid #e94338; width:714px; display:none; background-color:#fff; background:url(../images/all_shangji_fg.jpg) repeat-y 484px 0;}
+
+
+.shangji_l{ width:460px; float:left; padding-left:14px;}
+.shangji_l dl { padding:14px 0; border-bottom:1px dashed #e2e2e2;}
+.shangji_l dl dt{ line-height:26px; height:26px; float:left; width:71px; padding-left:14px; float:left; font-size:14px; font-family:"微软雅黑";}
+.shangji_l dl dt a{color:#d81f13;}
+.shangji_l dl dd{ margin-left:85px; line-height:26px;}
+.shangji_l dl dd a{ float:left; white-space:nowrap; width:75px; color:#666;}
+.shangji .shangji_r{ float:right; width:220px; padding-left:10px; margin-top:14px;}
+.shangji_fff{ position:absolute; left:198px; top:2px; background-color:#fff; z-index:999; width:2px; height:102px; display:none;}
+.shangji .shangji_r h3{ height:30px; line-height:30px; background:url(../images/bt_pic.jpg) no-repeat left center; padding-left:12px; }
+.all_sort .hover .shangji_r ul{ width:220px; padding:0; border:none;}
+.shangji .shangji_r ul li{ width:99px; height:76px; float:left; margin-right:10px; padding:0; margin-bottom:14px;}
+.shangji .shangji_r ul li a{ width:93px; height:70px; display:block; padding:2px; border:1px solid #e2e2e2; color:#fff;}
+.shangji .shangji_r ul li img{ width:93px; height:70px;}
+.jqflash{float:left; margin:10px 10px 0 0;  width:280px; height:372px; }
+
+
+
+.shangji{ background:url(../images/sj_fg.jpg) repeat-x; height:104px;}
+.shangji ul{ height:102px; padding-top:2px; padding-left:8px; border-left:2px solid #e94338; z-index:9999;}
+.shangji ul li{ float:left; width:50px; padding:14px 5px;}
+.shangji ul li a{ width:50px; height:78px; display:block; text-align:center; line-height:20px; color:#fff;}
+.shangji ul li a span{ width:50px; height:50px; margin-bottom:6px; display:block; }
+.all_sort .hover ul{ background-color:#fff; border-top:2px solid #e94338; padding-top:0;}
+.all_sort .hover ul li a{ color:#d81f13;}
+.all_sort .hover .shangji_y,.all_sort .hover .shangji_fff{ display:block;}
+
+.all_sort .hover .shangji_y {
+    -webkit-animation: slideup 300ms;
+    animation: slideup 300ms;
+    visibility: visible;
+}
+
+@keyframes slideup {
+    0% { transform: translateY(15px); opacity: 0.8; }
+    100% { transform: translateY(0px); opacity: 1; }
+}
+
+@-webkit-keyframes slideup {
+    0% { -webkit-transform: translateY(15px); opacity: 0.8; }
+    100% { -webkit-transform: translateY(0px); opacity: 1; }
+}
+.shangji ul li a span.sj1{ background:url(../images/nav.png) no-repeat center top;}
+.shangji ul li a span.sj2{ background:url(../images/nav.png) no-repeat center -50px;}
+.shangji ul li a span.sj3{ background:url(../images/nav.png) no-repeat center -100px;}
+.shangji ul li a span.sj4{ background:url(../images/nav.png) no-repeat center -150px;}
+.shangji ul li a span.sj5{ background:url(../images/nav.png) no-repeat center -200px;}
+.shangji ul li a span.sj6{ background:url(../images/nav.png) no-repeat center -250px;}
+.shangji ul li a span.sj7{ background:url(../images/nav.png) no-repeat center -300px;}
+.shangji ul li a span.sj8{ background:url(../images/nav.png) no-repeat center -350px;}
+.shangji ul li a span.sj9{ background:url(../images/nav.png) no-repeat center -400px;}
+.shangji ul li a span.sj10{ background:url(../images/nav.png) no-repeat center -450px;}
+.shangji ul li a span.sj11{ background:url(../images/nav.png) no-repeat center -500px;}
+.shangji ul li a span.sj12{ background:url(../images/nav.png) no-repeat center -550px;}
